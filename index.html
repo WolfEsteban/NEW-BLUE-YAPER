@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1 id="title">Formulario de datos básicos</h1>
+    <p id="description">Por favor ingresa tus datos en el siguiente formulario.</p>
+  
+    <form id="survey-form">
+      <!-- Nombre -->
+      <label id="name-label" for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+  
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+  
+      <!-- Número -->
+      <label id="number-label" for="number">Número:</label>
+      <input type="number" id="number" name="number" placeholder="Ingresa tu número" min="1" max="100000000000" required>
+  
+      <!-- Edad -->
+      <label id="age-label" for="age">Edad:</label>
+      <input type="number" id="age" name="age" placeholder="Ingresa tu edad" min="1" max="200" required>
+  
+      <!-- Pregunta -->
+      <label for="dropdown">¿Te gustan los gatos?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+      </select>
+  
+      <!-- Pregunta 2 -->
+  <p>¿Alguien en tu casa tiene gatos?</p>
+  <label><input type="radio" name="radio-group" value="si"> Sí</label>
+  <label><input type="radio" name="radio-group" value="no"> No</label>
+  
+      <!-- Pregunta 3 -->
+      <p>¿Tienes gatos en tu casa?</p>
+      <label><input type="checkbox" name="checkbox-group" value="si-1"> Sí, 1</label>
+      <label><input type="checkbox" name="checkbox-group" value="si-2"> Sí, 2 o más</label>
+      <label><input type="checkbox" name="checkbox-group" value="no"> No</label>
+  
+      <!-- Caja de comentarios -->
+      <label for="comments">Comentarios adicionales:</label>
+      <textarea id="comments" name="comments" placeholder="Escribe tus comentarios aquí..."></textarea>
+  
+      <!-- Botón de enviar -->
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
